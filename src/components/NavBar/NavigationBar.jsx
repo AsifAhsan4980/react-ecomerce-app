@@ -19,7 +19,7 @@ class NavigationBar extends Component {
     return (
       <>
         <div fixed="top">
-          <Navbar bg="primary" variant="dark" fluid>
+          <Navbar sm={12} md={8} lg={12} xl={12} bg="primary" variant="dark">
             <Container fluid>
               <Row className="mr-5">
                 <Col>
