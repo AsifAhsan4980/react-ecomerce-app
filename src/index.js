@@ -3,12 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import Counters from './components/Cart/counters';
-import Homepage from "./Pages/Homepage.js";
+import ReactRouter from "./Router/Router";
 
 ReactDOM.render(
   <>
-    <Homepage />
+    <ReactRouter />
   </>,
   document.getElementById("root")
 );

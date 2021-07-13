@@ -23,7 +23,7 @@ class NavigationBar extends Component {
             <Container fluid>
               <Row className="mr-5">
                 <Col>
-                  <Navbar.Brand href="#home">
+                  <Navbar.Brand href="/">
                     <img
                       src={logo}
                       height="30"
@@ -34,16 +34,16 @@ class NavigationBar extends Component {
                 </Col>
               </Row>
               <Nav className="mr-auto">
-                <Nav.Link className="mr-4" href="#home">
+                <Nav.Link className="mr-4" href="/">
                   Home
                 </Nav.Link>
-                <Nav.Link className="mr-4" href="#features">
+                <Nav.Link className="mr-4" href="/Gallery">
                   Gallery
                 </Nav.Link>
-                <Nav.Link className="mr-4" href="#pricing">
+                <Nav.Link className="mr-4" href="/Contact">
                   Contact Us
                 </Nav.Link>
-                <Nav.Link className="mr-4" href="#pricing">
+                <Nav.Link className="mr-4" href="/About">
                   About
                 </Nav.Link>
               </Nav>

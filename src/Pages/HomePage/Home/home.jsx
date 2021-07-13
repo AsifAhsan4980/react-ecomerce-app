@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product/Product";
 import { Container, Row, Col } from "react-bootstrap";
-import Slideshow from "../Slideshow/slideshow";
+import Slideshow from "../../../components/Slideshow/slideshow";
 
 const cardInfo = [
   {
@@ -69,20 +69,10 @@ const cardInfo = [
 ];
 
 const Home = () => {
-  // const renderCard = (card, index) => {
-  //   <Card style={{ width: "18rem" }} key={(index, console.log(index))}>
-  //     <Card.Img variant="top" roundedCircle src={card.image} />
-  //     <Card.Body>
-  //       <Card.Title>{card.name}</Card.Title>
-  //       <Card.Text>{card.description}</Card.Text>
-  //       <Button variant="primary">Go somewhere</Button>
-  //     </Card.Body>
-  //   </Card>;
-  // };
-
   return (
     <main>
       <Slideshow />
+      <br />
       <Container>
         <Row className="justify-content-md-center">
           <Col md="auto">
@@ -90,17 +80,26 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      <br />
       <Container fluid>
         <Row>
           {cardInfo.map((product, index) => {
             return (
-              <Col lg={3} sm={6} md={4} xl={3} className="mb-4">
-                <Product key={index} data={product} />
+              <Col
+                key={product.id}
+                lg={3}
+                sm={6}
+                md={4}
+                xl={3}
+                className="mb-4"
+              >
+                <Product data={product} />
               </Col>
             );
           })}
         </Row>
       </Container>
+      <br />
     </main>
   );
 };
